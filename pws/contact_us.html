@@ -3,6 +3,7 @@
 <head> 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="styles/styles.css">
     <title>Contact Us</title>
     <style>
                 body {
@@ -87,9 +88,10 @@
 </head>
 <body>
     <header>
+        <a id="logo_link" href="index.html">
+            <img class="logo" src="images/anchors_aweigh.png" alt="logo of PICsINC"> 
+        </a>
         <nav>
-            <!--Change the width to 80 px in a css sheet-->
-            <a href="index.html"></a><img src="images/anchors_aweigh.png" alt="logo of PICsINC"> 
             <a href="homepage.html">Homepage</a>
             <a href="page2.html">Page 2</a>
             <a href="page3.html">Page 3</a>
@@ -119,21 +121,22 @@
         </form>
     </main>
     <footer>
-        <footer>
-            <p>PICsINC &copy; 2024 - James Smith</p>
-            <p><a href="personal-site-plan.html" target="_blank">Site Plan</a></p>
-            <p><a href="#" target="_blank">Contact Us</a></p> <!--This will be contact_us.html-->
-            <div class="social">
-                <a href="https://facebook.com" target="_blank">
-                       <img src="images/facebook.png" alt="fb icon">
-                </a>
-                <a href="https://twitter.com" target="_blank">
-                       <img src="images/twitter.png" alt="twitter icon">
-                </a>
-                <a href="https://instagram.com" target="_blank">
-                       <img src="images/instagram.png" alt="instagram icon">
-                </a>
-            </div>
+        <p>PICsINC &copy; 2024 - James Smith</p>
+        <p><a href="personal-site-plan.html" target="_blank">Site Plan</a></p>
+        <p><a href="#" target="_blank">Contact Us</a></p> <!--This will be contact_us.html-->
+        <div class="social">
+            <a href="https://facebook.com" target="_blank">
+                <img src="images/facebook.png" alt="fb icon">
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <img src="images/twitter.png" alt="twitter icon">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="images/instagram.png" alt="instagram icon">
+            </a>
+        </div>
+
+    </footer>
     <script>
         // get the feedback div element so we can do something with it.
         const feedbackElement = document.getElementById('feedback');

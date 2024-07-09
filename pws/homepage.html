@@ -4,60 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage</title>
+    <link type="text/css" rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <!--Change the width to 80 px in a css sheet-->
-            <a href="index.html"></a><img src="images/anchors_aweigh.png" alt="logo of PICsINC"> 
-            <a href="homepage.html">Homepage</a>
-            <a href="page2.html">Page 2</a>
-            <a href="page3.html">Page 3</a>
-            <a href="contact_us.html">Contact Us</a>
-        </nav> 
-    </header>
-    <main>
-        <!-- This is where you build the HMTL for your content and (wireframes?)-->
-         <div class="grid-container">
-            <h1>PICsINC</h1>
-            <img id="hero_home" src="images/carrier_home.jpg" alt="Moored ashore">
-            <h3>Why contract with PICsINC?</h3>
-            <p>
-                The services I provide are simple, I have a lot of prior experience with navy equipment in an 
-                Arleigh Burke class destroyer as an IC, and I can provide those skills to the navy as a private contractor. 
-                This website assumes I have the personnel and resources available to be able to provide these services, in replacing 
-                and fixing broken equipment that the service members do not have access to. I have reliable parts that will work 
-                upon receipt so don’t worry about receiving bad parts as is so common when ordering through supply. 
-                My purpose is not to replace supply, just to have the materials on-hand when called in for a job, so that 
-                if the part is the problem, I can replace it and fix the problem. 
-            </p>
-
-                <img src="images/fire_fighters.jpg" alt="Firefighters">
+    <div id="content">
+        <header>
+            <a id="logo_link" href="index.html">
+                <img class="logo" src="images/anchors_aweigh.png" alt="logo of PICsINC"> 
+            </a>
+            <nav>
+                <a href="homepage.html">Homepage</a>
+                <a href="page2.html">Page 2</a>
+                <a href="page3.html">Page 3</a>
+                <a href="contact_us.html">Contact Us</a>
+            </nav> 
+        </header>
+        <main>
+            <!-- This is where you build the HMTL for your content and (wireframes?)-->
+            <div class="intro-container">
+                    <div id="hero">
+                    <h1 class="home-title">PICsINC</h1>
+                    <img id="hero_home" src="images/carrier_home.jpg" alt="Moored ashore">
+                </div>
+                <h3>Prior ICs INC. Cheesy? Yes. Shows who we are and what we're made of? Also yes.</h3>
+                <h1>Who are we?</h1>
                 <p>
-                    With every one of us here at PICsINC having prior naval experience, we understand how vital it is to 
-                    get the wet stuff on the hot stuff as soon as possible, and so we specialize in repairing all equipment
-                    that will be instrumental in getting knowledge of the fire to you as soon as possible, and the equipment
-                    that will facilitate the communications required to get you to the fire as soon as possible. You've got a ship
-                    to save, after all. 
-                    </p>
+                    Well, let us tell you. The services we provide are simple, we have a lot of prior experience with naval equipment on 
+                    Arleigh Burke class destroyers as ICs, and we can provide these skills to the navy as private contractors. 
+                    This website shall assume we have the personnel and resources available to be able to provide these services, in replacing 
+                    and fixing broken equipment that the service members do not have access to. We have reliable parts that will work 
+                    upon receipt so don’t worry about receiving bad parts - as is so common when ordering through supply. 
+                    Our purpose is not to replace supply, just to have the materials on-hand when called in for a job, so that 
+                    if the part is the problem, we can replace it. 
+                </p>
 
-    </main>
-    <footer>
-        <p>PICsINC &copy; 2024 - James Smith</p>
-        <p><a href="personal-site-plan.html" target="_blank">Site Plan</a></p>
-        <p><a href="#" target="_blank">Contact Us</a></p> <!--This will be contact_us.html-->
-        <div class="social">
-            <a href="https://facebook.com" target="_blank">
-                   <img src="images/facebook.png" alt="fb icon">
-            </a>
-            <a href="https://twitter.com" target="_blank">
-                   <img src="images/twitter.png" alt="twitter icon">
-            </a>
-            <a href="https://instagram.com" target="_blank">
-                   <img src="images/instagram.png" alt="instagram icon">
-            </a>
-        </div>
+                    <img src="images/fire_fighters.jpg" alt="Firefighters">
+                    <p>
+                        With every one of us here at PICsINC having prior naval experience, we understand how vital it is to 
+                        get the wet stuff on the hot stuff as soon as possible, and so we specialize in repairing all equipment
+                        that will be instrumental in getting knowledge of the fire to you as soon as possible, and the equipment
+                        that will facilitate the communications required to get you to the fire as soon as possible. You've got a ship
+                        to save, after all. 
+                        </p>
+                        <div class="button-box">
+                            <a class="reserve" href="contact_us.html">Reserve Services</a>
+                        </div>
+            </div>
 
-    </footer>
+        </main>
+        <footer>
+            <p>PICsINC &copy; 2024 - James Smith</p>
+            <p><a href="personal-site-plan.html" target="_blank">Site Plan</a></p>
+            <p><a href="#" target="_blank">Contact Us</a></p> <!--This will be contact_us.html-->
+            <div class="social">
+                <a href="https://facebook.com" target="_blank">
+                    <img src="images/facebook.png" alt="fb icon">
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <img src="images/twitter.png" alt="twitter icon">
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <img src="images/instagram.png" alt="instagram icon">
+                </a>
+            </div>
+
+        </footer>
+    </div>    
 </body>
 </html>
