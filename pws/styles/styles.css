@@ -23,7 +23,7 @@
   --nav-hover-link-color: white;
   --nav-hover-background-color: #D4AC0D;
 }
-#content{
+.content{
     max-width: 1600px;
     margin: 0 auto;
 }
@@ -38,6 +38,14 @@ header{
     display: grid;
     grid-template-columns: 150px auto;
 }
+#p2_section1{
+    padding: 5px;
+    margin: 60px 5px;
+}
+#p2_section2{
+    padding: 5px;
+    margin: 60px 5px;
+}
 nav {
     display: flex;
     justify-content: space-around;
@@ -49,6 +57,9 @@ nav {
 }
 .button-box{
     text-align: center;
+}
+#p2_button-box{
+    margin-top: 150px;
 }
 .reserve{
     text-decoration: none;
@@ -91,6 +102,64 @@ nav a:hover{
     background-color: var(--primary-color) ;
     color: var(--headline-color-on-color);
     text-decoration: underline;
+}
+/* CSS for Modal */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+  }
+
+ #caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+  
+.modal-content, #caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+  
+  @keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
+  
+ .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
 }
 #hero{
     display: grid;
@@ -140,6 +209,9 @@ footer .social img{
         display: block;
         padding: 15px;
     }
+    .modal-content {
+        width: 100%;
+      }
     #hero {
         margin-top: 0;
     }

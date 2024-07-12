@@ -4,55 +4,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page 2</title>
+    <link type="text/css" rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <!--Change the width to 80 px in a css sheet-->
-            <a href="index.html"></a><img src="images/anchors_aweigh.png" alt="logo of PICsINC"> 
-            <a href="homepage.html">Homepage</a>
-            <a href="page2.html">Page 2</a>
-            <a href="page3.html">Page 3</a>
-            <a href="contact_us.html">Contact Us</a>
-        </nav> 
-    </header>
-    <main>
-        <!-- This is where you build the HMTL for your content and (wireframes?)-->>
-         <div class="grid-container">
-            <h1>PICsINC</h1>
-      <p>
-Getting started is easy. Request our services on the website and fill out the required information to let us find you, 
-and know what the issue is. We’ll come with the rest, and you’ll find yourself with one less problem to worry about 
-in your preparations for deployment.
-</p>
-<img src="images/combat.jpg" alt="Equipment in Combat">
-<h3>What information do we need from you?</h3>
-<p>
-In order to request our services, a little bit of information is required so we know how to help you, 
-and who to talk to so we know what your issue is, or can ask to have the problem clarified. You will need to 
-provide your name, rank is optional, you need to provide your ship hull number, 
-what base you’re stationed at (and moored), a description of what your issue is, where in the ship your issue is, 
-and what the symptoms of the problem are. Once we have all this information, we will know what and where the problem is, 
-where and how we can contact you for questions of clarification, and we’ll be able to handle the rest.
-      </p>
-        <img src="images/captains_pilothouse.jpg" alt="Equipment in Pilothouse">
-    </main>
-    <footer>
-        <p>PICsINC &copy; 2024 - James Smith</p>
-        <p><a href="personal-site-plan.html" target="_blank">Site Plan</a></p>
-        <p><a href="#" target="_blank">Contact Us</a></p> <!--This will be contact_us.html-->
-        <div class="social">
-            <a href="https://facebook.com" target="_blank">
-                   <img src="images/facebook.png" alt="fb icon">
+    <div class="content">
+        <header>
+            <a id="logo_link" href="index.html">
+                <img class="logo" src="images/anchors_aweigh.png" alt="logo of PICsINC"> 
             </a>
-            <a href="https://twitter.com" target="_blank">
-                   <img src="images/twitter.png" alt="twitter icon">
-            </a>
-            <a href="https://instagram.com" target="_blank">
-                   <img src="images/instagram.png" alt="instagram icon">
-            </a>
-        </div>
+            <nav>
+                <a href="homepage.html">Homepage</a>
+                <a href="page2.html">Page 2</a>
+                <a href="page3.html">Page 3</a>
+                <a href="contact_us.html">Contact Us</a>
+            </nav> 
+        </header>
+        <main>
+            <!-- This is where you build the HMTL for your content and (wireframes?)-->
+            <div class="intro-container">
+                <div id="p2_section1">
+                        <h1>PICsINC</h1>
+                        <p>
+                        Getting started is easy. Request our services on the website and fill out the required information to let us find you, 
+                        and know what the issue is. We’ll come with the rest, and you’ll find yourself with one less problem to worry about 
+                        in your preparations for deployment.
+                        </p>
+                    
+                    <div id="modal_img">
+                        <img id="combat_modal" src="images/combat.jpg" alt="Equipment in Combat">
+                        <div id="my_modal" class="modal">
+                            <span class="close">&times;</span>
+                            <img class="modal-content" id="img01">
+                            <div id="caption">An example of a Ship's Combat Room</div>
+                        </div>
+                    </div>
+                </div>
+                <div id="p2_section2">
+                    <h3>What information do we need from you?</h3>
+                    <p>
+                    In order to request our services, a little bit of information is required so we know how to help you, 
+                    and who to talk to so we know what your issue is, or can ask to have the problem clarified. You will need to 
+                    provide your name, rank is optional, you need to provide your ship hull number, 
+                    what base you’re stationed at (and moored), a description of what your issue is, where in the ship your issue is, 
+                    and what the symptoms of the problem are. Once we have all this information, we will know what and where the problem is, 
+                    where and how we can contact you for questions of clarification, and we’ll be able to handle the rest.
+                    </p>
+                </div>
+                <img src="images/captains_pilothouse.jpg" alt="Equipment in Pilothouse">
+                <div id="p2_button-box">
+                    <div class="button-box">
+                        <a class="reserve" href="contact_us.html">Reserve Services</a>
+                    </div>
+                </div>
+            </div>
 
-    </footer>
+        </main>
+        <footer>
+            <p>PICsINC &copy; 2024 - James Smith</p>
+            <p><a href="personal-site-plan.html" target="_blank">Site Plan</a></p>
+            <p><a href="#" target="_blank">Contact Us</a></p> <!--This will be contact_us.html-->
+            <div class="social">
+                <a href="https://facebook.com" target="_blank">
+                    <img src="images/facebook.png" alt="fb icon">
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <img src="images/twitter.png" alt="twitter icon">
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <img src="images/instagram.png" alt="instagram icon">
+                </a>
+            </div>
+
+        </footer>
+    </div>    
+<script src="javascript/script.js"></script>
 </body>
 </html>
